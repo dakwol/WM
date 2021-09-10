@@ -1,0 +1,351 @@
+
+
+
+.intro__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 180px;
+    margin-bottom: 20px;
+}
+
+.intro__text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    width: 500px;
+    color: #FFFFFF;
+    margin-bottom: 190px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.intro__text::after{
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 5px;
+    border-radius: 25px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+.contain{
+    padding: 62px 0 62px 0;
+    padding-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sect__work{
+    background: url(https://cdn.discordapp.com/attachments/656925069498384386/797480639666323476/gory_vershiny_zasnezhennyj_134413_1920x1080.jpg) center no-repeat fixed;
+    width: 100%;
+
+
+}
+
+.continer__work{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 70px;
+    text-align: center;
+    padding: 185px 0;
+}
+
+.workk__card{
+    display: flex;
+    padding-left: 50px;
+    justify-content: space-between;
+}
+
+.card__project{
+    overflow: hidden;
+    position: relative;
+    transition: .3s linear;
+}
+
+.card__project::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0;
+    transform: translate(-100%,100%);
+    transition: .5s linear;
+}
+
+.card__project::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0;
+    transform: translate(100%,-100%);
+    transition: .5s linear;
+}
+
+.card__project:hover::after{
+    transform: translate(0);
+    opacity: 0.5;
+}
+
+.card__project:hover::before{
+    transform: translate(0);
+    opacity: 0.5;
+}
+
+.card__project-item{
+    width: 100%;
+    height: 100%;
+}
+
+.intro__work-logo{
+    width: 300px;
+}
+
+.work__section{
+    padding: 55px 0;
+    transition: .5s linear;
+}
+
+.work__header{
+    padding-left: 190px;
+    padding-right: 190px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.work__title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+    text-transform: uppercase;
+
+}
+
+.work__content{
+    margin-top: 90px;
+    padding-left: 190px;
+    width: 400px;
+}
+
+.work__flex{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 130px;
+}
+
+.work__info-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+
+
+    margin-bottom: 25px;
+}
+
+.work__info-subtitle{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+
+    margin-bottom: 20px;
+}
+
+.work__info-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    width: 318px;
+    margin-bottom: 50px;
+}
+
+.work__info-color{
+    margin-bottom: 90px;
+}
+
+.sredstve__item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.sredstve__element{
+    text-align: center;
+
+}
+
+.sredstve__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 10px;
+
+}
+
+.work__slider{
+    position: relative;
+    width: 600px;
+
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 100px;
+}
+
+.slider__design-one{
+    position: absolute;
+}
+
+.slider__design-two{
+    position: absolute;
+}
+
+.slider__design-thr{
+    position: absolute;
+}
+
+.slider__design-one{
+    top: 0;
+    left: 0;
+    transition: .3s linear;
+}
+
+
+
+.slider__design-two{
+    top: 40px;
+    left: 150px;
+    z-index: 1;
+}
+
+.slider__design-thr{
+    top: 0;
+    right: 0;
+}
+
+.work__slink{
+    position: relative;
+    width: 150px;
+
+}
+
+.work__slink-ico{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 35px;
+    z-index: 1;
+    width: 50px;
+    font-size: 20px;
+
+    height: 50px;
+    border-radius: 25px;
+    transition: .5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.work__slink:hover .work__slink-ico{
+    transform: translateX(-100px);
+}
+
+.slink{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s linear;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-decoration: none;
+    transform: translateX(-20px);
+
+}
+
+.slink:hover{
+    color: #1E1EB4;
+}
+
+.work__slink:hover .slink{
+    opacity: 1;
+    transform: translateX(0);
+
+}
+
+.section__inherit{
+    background: url(https://cdn.discordapp.com/attachments/656925069498384386/797480639666323476/gory_vershiny_zasnezhennyj_134413_1920x1080.jpg) center no-repeat fixed;
+
+}
+
+.inherit__title{
+
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+
+    color: #FFFFFF;
+}
+
+.footer{
+    transition: .5s linear;
+}
+
+.footer__item{
+    padding: 15px 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__page{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #848484;
+}
+
+.footer__lk{
+    font-size: 30px;
+    color: #848484;
+    margin-left: 20px;
+    transition: .3s linear;
+}
+
+.footer__lk:hover{
+    color: #1E1EB4;;
+}
